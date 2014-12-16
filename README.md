@@ -11,4 +11,11 @@ Shouts out to Team Treehouse for the excellent tutorials.
 * Cloned repository to a web server at Nitrous
 * Implemented Twitter's Bootstrap into my project
 
+**To-Do**
+* Get better grasp on the Ruby language
+* Learn about helpers
+* Learn about CSS and Javascript, learn to implement
+* Learn more about database management
+* Learn how to create accounts, mailers, permissions
+
 
