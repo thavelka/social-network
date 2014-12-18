@@ -29,6 +29,9 @@ gem 'spring',        group: :development
 # Devise handles user accts
 gem 'devise'
 
+# SimpleForm
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
