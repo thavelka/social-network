@@ -1,4 +1,6 @@
 class StatusesController < ApplicationController
+
+  
   before_action :set_status, only: [:show, :edit, :update, :destroy]
 
   # GET /statuses
@@ -71,4 +73,14 @@ class StatusesController < ApplicationController
     def status_params
       params.require(:status).permit(:user_id, :content)
     end
+    
+    before_filter :require_login
+
+    private
+
+      def require_login
+        unless user_signed_in?
+          redirect_to welcome_home_path
+        end
+      end
 end
