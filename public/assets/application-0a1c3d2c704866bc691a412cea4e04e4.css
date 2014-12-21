@@ -8,6 +8,7 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+
 .clearfix {
   *zoom: 1;
 }
@@ -1104,8 +1105,9 @@ input[type="color"],
 }
 
 input,
-textarea {
-  width: 100%;
+textarea,
+.uneditable-input {
+  width: 206px;
 }
 
 textarea {
@@ -6163,4 +6165,78 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+/* line 5, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+hr {
+  background: #ddd;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 0 0;
+  border: none;
+}
+
+/* line 15, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+.btn {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 20, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+.status {
+  padding: 5px 20px 0px 20px;
+}
+
+/* line 24, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+.status p {
+  font-size: 1em;
+  margin-top: 0px;
+}
+
+/* line 29, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+.status.hover {
+  background: #FAFAFA;
+}
+
+/* line 33, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+.status .admin {
+  display: none;
+}
+
+/* line 37, /Users/tim/Development/Github/social-network/app/assets/stylesheets/statuses.css.scss */
+.status.hover .admin {
+  display: inline;
+}
+/* line 6, /Users/tim/Development/Github/social-network/app/assets/stylesheets/welcome.css.scss */
+.hero-unit {
+  box-shadow: 3px 3px 10px -5px #AAA;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	padding-top: 60px;
 }

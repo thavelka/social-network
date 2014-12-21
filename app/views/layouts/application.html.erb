@@ -15,7 +15,7 @@
 				<a href="#" class="brand"> Generic Social Network™ </a>
 				<ul class="nav">
 					<li class="divider-vertical"></li>
-					<li><%= link_to statuses_path do %>
+					<li><%= link_to feed_path do %>
 						<i class="icon-home icon-white"></i> Feed
 						<% end %></li>
 					<li class="divider-vertical"></li>
@@ -39,7 +39,7 @@
                     <% end %></li>
                   <li class="divider-horizontal"></li>
                   
-                  <li> <%= link_to destroy_user_session_path, method: :delete do %>
+                  <li> <%= link_to logout_path do %>
                     <i class="icon-share"></i> 
                     Sign Out
                     <% end %></li>
@@ -48,7 +48,7 @@
                   
               <% else %>
               <ul class= "nav">
-                  <li> <%= link_to new_user_session_path do %>
+                  <li> <%= link_to login_path do %>
                     <i class="icon-user icon-white"></i> Sign In
                     <% end %></li>
                   <li class="divider-horizontal"></li>

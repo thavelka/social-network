@@ -13,6 +13,7 @@ hr {
 }
 
 .btn {
+  height: 100%;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -36,4 +37,8 @@ hr {
 
 .status.hover .admin {
 	display: inline;
+}
+
+.text {
+  margin: 0 15px 20px 0;
 }
