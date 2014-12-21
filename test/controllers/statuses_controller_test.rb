@@ -14,7 +14,6 @@ class StatusesControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
     assert_response :redirect
-    assert_redirected_to '/'
   end
 
   test "should create status" do
