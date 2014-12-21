@@ -12,7 +12,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="navbar-inner">
 			<div class="container">
-				<a href="#" class="brand"> Generic Social Networkâ„¢ </a>
+				<a href="#" class="brand"> Generic Social Networkœôõâ </a>
 				<ul class="nav">
 					<li class="divider-vertical"></li>
 					<li><%= link_to feed_path do %>
