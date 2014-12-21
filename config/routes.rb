@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 	
+  get 'profiles/show'
+
   get 'welcome/home'
 
   devise_for :users
