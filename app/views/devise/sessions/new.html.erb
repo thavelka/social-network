@@ -1,7 +1,8 @@
 <div class="row">
   <div class="span4">
+    <div class="well">
   
-        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class:"well"}) do |f| %>
+        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         
         <fieldset>
           <legend>Sign in</legend>
@@ -24,3 +25,4 @@
         <%= render "devise/shared/links" %>
       </div>
   </div>
+</div>
