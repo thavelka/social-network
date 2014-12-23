@@ -16,28 +16,6 @@
 
 <% @statuses.reverse_each do |status| %>
 
-
-<div class="well well-small">
-  <div class="row">
-    <div class = "span1">
-      <img src="<%=status.user.gravatar_url%>" class="img-rounded">
-    </div>
-    <div class= "span8">
-      <div class="status">
-        <h4><strong><%= link_to status.user.full_name, status.user.profile_name %> </strong></h4>
-        <p><%= status.content%><hr ></p>
-  	    <div class="meta">
-  	      <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
-  	      <span class="admin">
-            <% if status.user == current_user %>
-  	        | <%= link_to "Edit", edit_status_path(status)%> |
-  		      <%= link_to "Delete", status, method: :delete, data: {confirm: "Are you sure?"} %>
-            <% end %>
-  		    </span>
-  	    </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <%= render partial: 'print_status', :locals => {:status => status} %>
   
 <% end %>
