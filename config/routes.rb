@@ -19,8 +19,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   get 'feed', to: 'statuses#index', as: :feed
-	root to: 'statuses#index'
+  root to: 'statuses#index'
 
+  get '/:id', to: 'profiles#show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

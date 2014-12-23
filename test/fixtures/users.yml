@@ -1,5 +1,12 @@
 tim:
   first_name: Timothy
   last_name: Havelka
-  profile_name: tim.havelka
+  profile_name: thavelka
   email: tim.havelka@gmail.com
+  
+katy:
+  first_name: Katy
+  last_name: Cooley
+  profile_name: cooley.katy
+  email: cooley.katy@gmail.com
+  
