@@ -17,6 +17,13 @@ class User < ActiveRecord::Base
   def full_name()
       "#{first_name} #{last_name}"
   end
+  
+  def gravatar_url()
+    stripped_email = email.strip
+    lc_email = stripped_email.downcase
+    hash = Digest::MD5.hexdigest(lc_email)
+    "http://gravatar.com/avatar/#{hash}"
+  end
     
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable

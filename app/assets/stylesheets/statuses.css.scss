@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+img {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  vertical-align: -60px;
+  width: 100%;
+}
+
 hr {
   background: #ddd; 
   clear: both; 
@@ -25,7 +34,7 @@ hr {
 }
 
 .status {
-	padding: 5px 20px 0px 20px;
+	padding: 5px 0px 0px 0px;
 }
 
 .status p {
@@ -33,7 +42,7 @@ hr {
 	margin-top: 0px;
 }
 
-.status.hover {
+.well.hover {
 	background: #FAFAFA;
 }
 

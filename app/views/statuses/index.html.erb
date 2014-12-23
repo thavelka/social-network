@@ -15,9 +15,14 @@
 </div>
 
 <% @statuses.reverse_each do |status| %>
-<div class="row">
-  <div class= "span10">
-    <div class="well well-small">
+
+
+<div class="well well-small">
+  <div class="row">
+    <div class = "span1">
+      <img src="<%=status.user.gravatar_url%>" class="img-rounded">
+    </div>
+    <div class= "span8">
       <div class="status">
         <h4><strong><%= status.user.full_name %></strong></h4>
         <p><%= status.content%><hr ></p>
