@@ -15,6 +15,8 @@ I really don't plan on taking down Twitter with this web app, so I'll move on to
 - [x] Learn about CSS and Javascript, learn to implement
 - [x] Learn more about database management
 - [x] Learn how to create accounts, mailers, permissions
+- [x] Deployed app to Heroku
+- [x] Purchased domain name
 
 
 **What's next:**
